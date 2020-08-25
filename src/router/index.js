@@ -1,22 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Place from '../views/Place.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/place',
+    path: '/place/:id',
     name: 'Place',
-    // route level code-splitting
-    // this generates a separate chunk (place.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "place" */ '../views/Place.vue')
+    component: Place
   }
 ]
 
