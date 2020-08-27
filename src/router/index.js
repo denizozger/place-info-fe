@@ -1,21 +1,21 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Place from '../views/Place.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Place from "../views/Place.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/place/:id',
-    name: 'Place',
-    component: Place
-  }
-]
+    path: "/place/:id",
+    name: "Place",
+    component: Place,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
