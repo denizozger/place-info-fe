@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Place from "../views/Place.vue";
+import Place from "@/views/Place.vue";
 
 Vue.use(VueRouter);
 

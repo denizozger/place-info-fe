@@ -1,19 +1,19 @@
 <template>
   <div class="dayContainer">
-    <div class="day">{{ day }}</div>
-    <div>
+    <span class="day">{{ day }}</span>
+    <section>
       <span v-if="hours.length === 0">closed</span>
-      <ul v-else>
+      <ol v-else>
         <li v-for="hour in hours" :key="hour.start">
           <Hour :start="hour.start" :end="hour.end" />
         </li>
-      </ul>
-    </div>
+      </ol>
+    </section>
   </div>
 </template>
 
 <script>
-import Hour from "./Hour";
+import Hour from "@/components/Hour";
 
 export default {
   name: "Day",
@@ -29,14 +29,13 @@ export default {
 .dayContainer {
   display: flex;
   justify-content: space-between;
-  border: 1px solid gray;
 }
 
 .day {
   text-transform: capitalize;
 }
 
-ul {
+ol {
   list-style-type: none;
 }
 </style>

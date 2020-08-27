@@ -1,5 +1,5 @@
 <template>
-  <div>{{ start }} - {{ end }}</div>
+  <span>{{ start }} - {{ end }}</span>
 </template>
 
 <script>
