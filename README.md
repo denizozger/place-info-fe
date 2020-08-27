@@ -1,4 +1,6 @@
-# place-info-fe
+# Place client
+
+This is an interface to display place information. Fetches the data from a BFF configured in `@/api/places-api.js`.
 
 ## Project setup
 
@@ -6,24 +8,14 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compile and run
 
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Usage
 
-```
-npm run build
-```
+The URL structure is `/place/{placeId}`
 
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+An example: http://localhost:8080/place/GXvPAor1ifNfpF0U5PTG0w
