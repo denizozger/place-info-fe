@@ -77,7 +77,7 @@ export default {
   flex-direction: column;
 }
 
-.place > section{
+.place section{
   border: 10px solid gray;
   padding: 10px;
 }
