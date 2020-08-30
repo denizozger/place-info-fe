@@ -37,5 +37,6 @@ export default {
 
 ol {
   list-style-type: none;
+  margin: 0px;
 }
 </style>
